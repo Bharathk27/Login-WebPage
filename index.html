@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <!-- Link to external stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Login form container -->
+    <div class="login-container">
+        <form id="loginForm">
+            <h2>Login</h2>
+
+            <!-- Username/Email input field -->
+            <label for="username">Username/Email:</label><br>
+            <input type="text" id="username" name="username" required><br><br>
+
+            <!-- Password input field -->
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" required><br><br>
+
+            <!-- Show/Hide password checkbox -->
+            <div class="show-password-container">
+                <input type="checkbox" id="showPassword">
+                <label for="showPassword">Show Password</label>
+            </div><br>
+
+            <!-- Remember me checkbox -->
+            <div class="remember-me-container">
+                <input type="checkbox" id="rememberMe">
+                <label for="rememberMe">Remember Me</label>
+            </div><br>
+
+            <!-- Submit button -->
+            <button type="submit">Login</button><br>
+
+            <!-- Error message placeholder -->
+            <p id="errorMessage"></p>
+
+            <!-- Loading spinner (hidden by default) -->
+            <div id="loadingSpinner" class="spinner hidden"></div>
+        </form>
+    </div>
+    
+    <!-- Link to external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>

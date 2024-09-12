@@ -1,0 +1,175 @@
+/* Body styles for centering the form in the middle of the page */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    /* Centers the form horizontally */
+    justify-content: center;
+   
+    /* Centers the form vertically */
+    align-items: center;    
+   
+    /* Full viewport height */
+    height: 100vh;          
+    margin: 0;
+    
+    /* medium dark shade of gray background */
+    background-color: #484848; 
+}
+
+/* Container for the login form */
+.login-container {
+    background-color: white;
+    padding: 30px;
+    
+    /* Rounded corners */
+    border-radius: 10px;     
+    
+    /* Shadow around the container */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
+    width: 100%;
+   
+   /* Maximum width for larger screens */
+    max-width: 400px;        
+    box-sizing: border-box;
+   
+   /* Center text inside the container */
+    text-align: center;      
+}
+
+/* Heading style for the form */
+h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Input field styling */
+input[type="text"], input[type="password"] {
+   
+    /* Full width of the container */
+    width: 100%;           
+    
+    /* Padding inside the input */
+    padding: 12px;           
+   
+    /* Space below each input field */
+    margin-bottom: 15px;     
+    
+    /* Light gray border */
+    border: 1px solid #ccc;  
+    
+    /* Rounded input fields */
+    border-radius: 5px;      
+   
+    /* Ensure padding doesn’t affect width */
+    box-sizing: border-box;  
+  
+    /* Font size of the text */
+    font-size: 16px;         
+}
+
+/* Container for the "Show Password" checkbox */
+.show-password-container,
+.remember-me-container {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+/* Button styles */
+button {
+   
+    /* Full width of the button */
+    width: 100%;            
+    
+    /* Padding inside the button */
+    padding: 12px;           
+    
+    /* Blue background color */
+    background-color: #007bff; 
+    
+    /* White text */
+    color: white;            
+    
+    /* No border given */
+    border: none;
+    
+    /* Rounded button */
+    border-radius: 5px;     
+    
+    /* given font size */
+    font-size: 16px;
+    
+    /* Hand pointer on hover */
+    cursor: pointer;         
+    
+    /* Smooth color transition */
+    transition: background-color 0.3s ease; 
+}
+
+/* Button hover effect */
+button:hover {
+    /* Darker blue on hover */
+    background-color: #0056b3; 
+}
+
+/* Spinner styling (hidden by default) */
+.spinner {
+    
+    /* Light gray background of spinner */
+    border: 4px solid #f3f3f3; 
+    
+    /* given border radius */
+    border-radius: 50%;
+    
+    /* Blue spinner border */
+    border-top: 4px solid #007bff; 
+    
+    /* given width */
+    width: 30px;
+    
+    /* given height */
+    height: 30px;
+    
+    /* Spinning animation */
+    animation: spin 1s linear infinite; 
+    
+    /* Center spinner */
+    margin: 10px auto; 
+}
+
+/* Hide the spinner by default */
+.hidden {
+    display: none;
+}
+
+/* Spinner animation */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Error message styling */
+#errorMessage {
+    color: red;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+    .login-container {
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    input[type="text"], input[type="password"], button {
+        font-size: 14px;
+    }
+
+    button {
+        padding: 10px;
+    }
+}
